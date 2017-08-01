@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +31,7 @@
     <script>
         "use strict";
         // Model: we store the data and make it accessible by all the script.
-        let messages = ["Coucou!", "Simplon!", "Test..."];
+        let messages = [];
 
         // View: this is the only place in our code where we display the data.
         function display() {
@@ -62,7 +63,7 @@
             if (this.readyState === XMLHttpRequest.DONE) {
                 if (this.status === 200) {
                     let text = document.querySelector("#message").value;
-                    console.log("success: " + this.responseText);
+                    //console.log("success: " + this.responseText);
                     // Controller: we update our data and ask for a new display.
                     messages.push(text);
                     display();
