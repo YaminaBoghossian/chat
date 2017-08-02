@@ -24,7 +24,7 @@
         </div>
         <form action="new-message.php" class="col-md-8 offset-md-2 mt-3">
             <label for="message">Message:</label>
-            <input type="text" id="message" placeholder="Say hi!" class="form-control">
+            <input type="text" name= "message" id="message" placeholder="Say hi!" class="form-control">
             <input type="submit" id="submit-message" value="Send" class="btn btn-primary">
         </form>
     </div>

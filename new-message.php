@@ -12,7 +12,8 @@ if (empty($_POST['message'])) {
 }
 require_once("model/Message.php");
 // creation dun nouvel objet
-$msg = new Message($_POST['message']);
+$msg = new Message($_POST['message'] );
+
 
 //utiliser la fonction qui est dans la database (qui cree les messages dans la database)
 $db->createMessage($msg);
