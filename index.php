@@ -63,7 +63,7 @@
             if (this.readyState === XMLHttpRequest.DONE) {
                 if (this.status === 200) {
                     let text = document.querySelector("#message").value;
-                    //console.log("success: " + this.responseText);
+                    console.log("success: " + this.responseText);
                     // Controller: we update our data and ask for a new display.
                     messages.push(text);
                     display();
